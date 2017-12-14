@@ -1,0 +1,17 @@
+---
+modules:
+  blazemeter:
+    token: c3ync1rbzirpsscj1kzm
+  jmeter:
+    memeory-xmx: 1G
+    
+reporting:
+  - module: blazemeter
+    test: Kape UI 60VUs with NEW RDS Instance QA INT Server 216 
+
+execution:
+  scenario: 
+    script: Kape_TestUi_QA_Integration_V3_216.jmx
+  concurrency: 1
+  ramp-up: 100s
+  hold-for: 3m
